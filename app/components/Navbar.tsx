@@ -41,7 +41,7 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
-					<Link href="https://github.com/omunite215">
+					<Link href="https://github.com/leneehe">
 						<Image
 							src="/logo.png"
 							width={80}
@@ -52,7 +52,7 @@ const Navbar = () => {
 						/>
 					</Link>
 					<p className="text-white text-[18px] font-bold cursor-pointer flex">
-						Om &nbsp; <span className="sm:block hidden ">| omunite215</span>
+						LENA &nbsp; <span className="sm:block hidden ">| Software Engineer</span>
 					</p>
 				</div>
 
@@ -76,18 +76,18 @@ const Navbar = () => {
 
 				<div className="sm:hidden flex flex-1 justify-end items-center">
 					<Image
-						src={toggle ? "/menu.svg" : "/close.svg"}
+						src={toggle ? "/close.svg" : "/menu.svg" }
 						width={28}
 						height={28}
 						alt="menu"
-						className="w-[28px] h-[28px] object-contain"
+						className="w-[28px] h-[28px] object-contain cursor-pointer"
 						onClick={() => setToggle(!toggle)}
 					/>
 
 					<div
 						className={`${
 							!toggle ? "hidden" : "flex"
-						} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+						} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] w-80 z-10 rounded-xl`}
 					>
 						<ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
 							{navLinks.map((nav) => (
