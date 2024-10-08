@@ -5,11 +5,11 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useState } from "react";
 
 const Computers = ({ isMobile }: { isMobile: boolean }) => {
-	const computer = useGLTF("/desktop_pc/scene.gltf");
+	const computer = useGLTF("/minimalistic_desktop/scene.gltf");
 	return (
 		<mesh>
-			<hemisphereLight intensity={0.15} groundColor="black" />
-			<pointLight intensity={1} />
+			<hemisphereLight intensity={1.5} groundColor="black" />
+			<pointLight intensity={0.7} position={[1.1, -0.4, -0.2]} />
 			<spotLight
 				position={[-20, 50, 10]}
 				angle={0.12}
@@ -20,9 +20,9 @@ const Computers = ({ isMobile }: { isMobile: boolean }) => {
 			/>
 			<primitive
 				object={computer.scene}
-				scale={isMobile ? 0.7 : 0.75}
-				position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-				rotation={[-0.01, -0.2, -0.1]}
+				scale={isMobile ? 1 : 1.7}
+				position={isMobile ? [-3.5, -3, -2.2] : [-3.9, -4.45, -2.5]}
+				rotation={[0, 1.35, 0]}
 			/>
 		</mesh>
 	);
