@@ -51,7 +51,7 @@ const technologies = [
 	},
 	{
 		name: 'Angular',
-		icon: '/tech/angular.svg'
+		icon: '/tech/angular.webp'
 	},
 	{
 		name: "React JS",
@@ -63,15 +63,15 @@ const technologies = [
 	},
 	{
 		name: "Ruby On Rails",
-		icon: "/tech/ruby-on-rails.svg",
+		icon: "/tech/ruby-on-rails.webp",
 	},
 	{
 		name: "PostgreSQL",
-		icon: "/tech/postgresql.svg",
+		icon: "/tech/postgresql.webp",
 	},
 	{
 		name: "SASS",
-		icon: "/tech/sass.svg",
+		icon: "/tech/sass.webp",
 	},
 	{
 		name: "git",

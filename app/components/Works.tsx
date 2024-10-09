@@ -69,7 +69,7 @@ const ProjectCard = ({
 							className="black-gradient w-10 h-10 ml-2 rounded-full flex justify-center items-center cursor-pointer"
 						>
 							<Image
-								src="/tech/netlify.webp"
+								src="/tech/website.png"
 								width={24}
 								height={24}
 								alt="source code"

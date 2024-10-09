@@ -33,9 +33,9 @@ const Contact = () => {
 				"template_jjegxdr",
 				{
 					from_name: form.name,
-					to_name: "Om Patel",
+					to_name: "Lena He",
 					from_email: form.email,
-					to_email: "omunite21@gmail.com",
+					to_email: "qy.lena@gmail.com",
 					message: form.message,
 				},
 				"VeFeVdEHL9F9_i6xp",
@@ -43,7 +43,7 @@ const Contact = () => {
 			.then(() => {
 				setLoading(false);
 				alert(
-					"A humble thanks for reaching me out. I will respond to you as soon as possible.",
+					"A humble thanks for reaching out to me! I will respond to you as soon as possible.",
 				);
 				setForm({
 					name: "",
@@ -77,7 +77,7 @@ const Contact = () => {
 							name="name"
 							value={form.name}
 							onChange={handleChange}
-							placeholder="Whats's your name?"
+							placeholder="What's your name?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
@@ -88,7 +88,7 @@ const Contact = () => {
 							name="email"
 							value={form.email}
 							onChange={handleChange}
-							placeholder="Whats's your email?"
+							placeholder="What's your email?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
@@ -99,7 +99,7 @@ const Contact = () => {
 							name="message"
 							value={form.message}
 							onChange={handleChange}
-							placeholder="What do you want to say?"
+							placeholder="What message would you like to deliver?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
@@ -107,7 +107,7 @@ const Contact = () => {
 						type="submit"
 						className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
 					>
-						{loading ? "Sending..." : "Sent"}
+						{loading ? "Sending..." : "Send"}
 					</button>
 				</form>
 			</motion.div>
