@@ -15,11 +15,14 @@ import { useInView } from "react-intersection-observer";
 
 type ExperienceCardProps = {
 	experience: (typeof experiences)[0];
-	inView: boolean;
 };
 
 
-const ExperienceCard = ({ experience, inView }: ExperienceCardProps) => {
+const ExperienceCard = ({ experience }: ExperienceCardProps) => {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		rootMargin: "-350px",
+	  });
 
 	return (
 		<VerticalTimelineElement
@@ -43,7 +46,7 @@ const ExperienceCard = ({ experience, inView }: ExperienceCardProps) => {
 				</div>
 			}
 		>
-			<div>
+			<div ref={ref}>
 				<h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
 				<p
 					className="text-secondary text-[16px] font-semibold"
@@ -68,10 +71,6 @@ const ExperienceCard = ({ experience, inView }: ExperienceCardProps) => {
 };
 
 const Experience = () => {
-	const { ref, inView } = useInView({
-		/* Optional options */
-		triggerOnce: true,
-	  });
 
 	return (
 		<>
@@ -79,16 +78,15 @@ const Experience = () => {
 				<p className="styles.sectionSubText text-center">
 					Work Experience
 				</p>
-				<h2 ref={ref} className="sectionHeadText text-center">My Journey.</h2>
+				<h2 className="sectionHeadText text-center">My Journey.</h2>
 			</motion.div>
 
 			<div className="mt-20 flex flex-col">
-				<VerticalTimeline>
+				<VerticalTimeline layout="2-columns">
 					{experiences.map((experience, index) => (
 						<ExperienceCard
 							key={`experience-${index}`}
 							experience={experience}
-							inView={inView}
 						/>
 					))}
 				</VerticalTimeline>

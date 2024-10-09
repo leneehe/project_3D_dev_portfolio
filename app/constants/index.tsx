@@ -93,31 +93,66 @@ const technologies = [
 
 const experiences = [
 	{
-		title: "Web Designer",
-		company_name: "A.V.M Auto",
-		icon: "/company/avm.webp",
-		iconBg: "#383E56",
-		date: "2020 -  2021",
+		title: "🎨 Graphic Designer",
+		company_name: "Freelance / In-house",
+		icon: "/company/graphic-design2.png",
+		iconBg: "#ffe9ec",
+		date: "2012 -  2017",
 		points: [
-			"Analyzing the needs of customer in a website.",
-			"Designing User Interface (UI) for the problem statement.",
-			"Improving designs to make more user friendly.",
-			"User Experience improvements and feedbacks.",
+			"I began my career as a designer for both in-house and freelance works.",
+			"I took lead on graphic design and art direction on brand development, website & mobile UI, advertisements, annual reports and small collateral projects/publications.",
+			"What started with web design quickly evolved into creating CMS/wordpress sites for clients with simple scripts.",
 		],
 	},
 	{
-		title: "Wordpress Developer",
-		company_name: "A.V.M Auto",
-		icon: "/company/avm.webp",
+		title: "🎓 Graduated from Full Stack Web Development Immersive",
+		company_name: "General Assembly | Bitmaker",
+		icon: "/company/general_assembly.png",
 		iconBg: "#E6DEDD",
-		date: "2021 - 2022",
+		date: "Oct 2017 - Jan 2018",
 		points: [
-			"Developing and maintaining Wordpress Site for A.V.M Auto The Car Body Shop based in Ahmedabad, Gujarat India.",
-			"Analyzing feedbacks and fixing bugs.",
-			"Search Engine Optimization.",
-			"Design Maintainence and hosting maintenance.",
+			"I completed a 12-week full-time web development immersive program with over 468+ hours of coding, specializing in HTML/CSS, Javascript/JQuery, AJAX, Ruby on Rails, PostgreSQL, and Github.",
+			`I built several projects, including the launch of full-stack collaborative web app project "Baking with Mary" for Cannabis receipe reviews.`
 		],
 	},
+	{
+		title: "👩‍💻 Software Coordinator / Web Developer",
+		company_name: "MacroMind Media / Contract",
+		icon: "/company/macromind-media.jpeg",
+		iconBg: "#FFF",
+		date: "Feb 2018 - Nov 2019",
+		points: [
+			"I worked contract part-time and freelance on sevreal web app projects.",
+			"Developed and deployed progressive web applications for custom-designed EdTech, Ecommerce-tech influence and patient-care projects, including scope and design contribution.",
+			"Designed and developed web applications using MVC-style frameworks like Ruby on Rails for the back-end.",
+			"Developing and maintaining Wordpress Site for small businesses."
+		],
+	},
+	{
+		title: "👩‍💻 UI UX Developer",
+		company_name: "iSmart Technology",
+		icon: "/company/ismarttechnology_logo.jpeg",
+		iconBg: "#383E56",
+		date: "May 2018 - Oct 2021",
+		points: [
+			"Collaborated with cross-functional team in early stages of concept development and brainstorming adapting to Lean UX processes",
+			"Developed, tested and maintained the IoT cloud platform consisting of new and legacy web applications, integration UI, and automated reporting services; utilizing Angular front-end, Javascript chart & grid libraries and SendGrid templates",
+			"Enhanced user experience to facilitate the use of equipment Fullness monitoring by analyzing activity tracking analytics & funnel tool to adapt to UI changes",
+		],
+	},
+	{
+		title: "👩‍💻 Software Engineer",
+		company_name: "Singuli",
+		icon: "/company/singuli.png",
+		iconBg: "#FFF",
+		date: "May 2018 - Oct 2021",
+		points: [
+			"Developed complex, reusable UI components utilizing Angular 15, SCSS, HandsonTable, AgGrid, ChartJS and MDC libraries, while customizing CSS styles for Material Design components to enhance user experience.",
+			"Ensured seamless data handling with export/import features and sophisticated data displays, while improved the reliability and consistency of frontend by delivering organized quality code structures and maintaining best practices and design system documentation.",
+			"Technical contributions as a lead frontend engineer to ensure continuous improvement and alignment with team and company goals. Duties include daily tasks on bug fixes, peer PR reviews, and maintaining high-quality code with Jasmin unit tests and Cypress E2E tests.",
+			"Created wireframe prototypes and UX design flows of new frontend features to bring cross-functional team together in project kick-off meetings",
+		],
+	}
 ];
 
 const testimonials = [
