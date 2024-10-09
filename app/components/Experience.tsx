@@ -10,14 +10,20 @@ import {
 	VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { useInView } from "react-intersection-observer";
+
 
 type ExperienceCardProps = {
 	experience: (typeof experiences)[0];
+	inView: boolean;
 };
 
-const ExperienceCard = ({ experience }: ExperienceCardProps) => {
+
+const ExperienceCard = ({ experience, inView }: ExperienceCardProps) => {
+
 	return (
 		<VerticalTimelineElement
+			visible = {inView}
 			contentStyle={{
 				background: "#1d1836",
 				color: "#fff",
@@ -62,13 +68,18 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 };
 
 const Experience = () => {
+	const { ref, inView } = useInView({
+		/* Optional options */
+		triggerOnce: true,
+	  });
+
 	return (
 		<>
 			<motion.div variants={textVariant()}>
 				<p className="styles.sectionSubText text-center">
 					Work Experience
 				</p>
-				<h2 className="sectionHeadText text-center">My Journey.</h2>
+				<h2 ref={ref} className="sectionHeadText text-center">My Journey.</h2>
 			</motion.div>
 
 			<div className="mt-20 flex flex-col">
@@ -77,6 +88,7 @@ const Experience = () => {
 						<ExperienceCard
 							key={`experience-${index}`}
 							experience={experience}
+							inView={inView}
 						/>
 					))}
 				</VerticalTimeline>

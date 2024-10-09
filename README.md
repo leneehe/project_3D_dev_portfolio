@@ -4,7 +4,7 @@
   <img src="https://user-images.githubusercontent.com/78680563/227708528-0e803ddf-506e-4d8b-98bc-dd7bf0f1b518.png" alt="Om's Logo Image"/>
 </p>
 
-This is my first portfolio project using Next.js. Originally from [Om's 3D Portfolio](https://github.com/omunite215/Project_3DPortfolio), initially made using tutorial of [JavaScipt Mastery](https://youtu.be/0fYi8SGA20k?feature=shared).
+This is my first portfolio project using Next.js and Three.js. Originally from [Om's 3D Portfolio](https://github.com/omunite215/Project_3DPortfolio), initially made using tutorial of [JavaScipt Mastery](https://youtu.be/0fYi8SGA20k?feature=shared).
 
 Work done on it other than the tutorial:-
 - Removed unused CSS.
@@ -46,7 +46,7 @@ Before you start, make sure you have the following software installed on your co
 1. Clone the repository to your local machine
 
 ```bash
-  git clone https://github.com/omunite215/Project_3DPortfolio.git
+  git clone https://github.com/leneehe/project_3D_dev_portfolio.git
 
 ```
 2. Navigate to the project directory
