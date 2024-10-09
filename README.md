@@ -15,6 +15,10 @@ Work done on it other than the tutorial:-
 
 This Project is hosted on Vercel : [3D Portfolio](https://project-3-d-portfolio-mu.vercel.app/)
 
+## 🏠 Built With:
+
+[![My Skills](https://skillicons.dev/icons?i=vscode,react,nextjs,threejs,tailwind,vercel)](https://skillicons.dev)
+
 
 ## 🚀 About Me
 Specializations:
@@ -22,11 +26,10 @@ Specializations:
 - Full Stack Web Development.
 - UI/UX Design.
 
-## 🙋‍♂️ Connect With Me
+## 🛠 Skills
 
-[<img src="https://skillicons.dev/icons?i=github" />](https://github.com/leneehe)&nbsp;
-[<img src="https://skillicons.dev/icons?i=linkedin" />](https://www.linkedin.com/in/lenahe/)&nbsp;
-[<img src="https://skillicons.dev/icons?i=devto" />](https://github.com/leneehe)
+[![My Skills](https://skillicons.dev/icons?i=html,css,sass,js,ts,angular,react,nextjs,bootstrap,tailwind,ruby,postgres,graphql,wordpress,git,threejs,d3,aws,figma,ps,ai)](https://skillicons.dev)
+
 
 # Getting Started
 
@@ -63,13 +66,6 @@ Before you start, make sure you have the following software installed on your co
 
 The website should now be up and running on http://localhost:3000.
 
-## 🏠 Built With:
-
-[![My Skills](https://skillicons.dev/icons?i=vscode,react,nextjs,threejs,tailwind,vercel)](https://skillicons.dev)
-
-## 🛠 Skills
-
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,threejs)](https://skillicons.dev)
 
 ## 🗒️ Authors
 - Lena He
@@ -81,6 +77,12 @@ The website should now be up and running on http://localhost:3000.
     </a>
   </a>
 </p>
+
+## 🙋‍♂️ Connect With Me
+
+[<img src="https://skillicons.dev/icons?i=github" />](https://github.com/leneehe)&nbsp;
+[<img src="https://skillicons.dev/icons?i=linkedin" />](https://www.linkedin.com/in/lenahe/)&nbsp;
+[<img src="https://skillicons.dev/icons?i=devto" />](https://github.com/leneehe)
 
 <p align="center">
   <img src="https://github.com/omunite215/Project_3DPortfolio/assets/78680563/2fcf609b-e802-4fec-8c82-8f55fd043437" alt="Om's Logo Image"/>

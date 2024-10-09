@@ -50,6 +50,10 @@ const technologies = [
 		icon: "/tech/typescript.webp",
 	},
 	{
+		name: 'Angular',
+		icon: '/tech/angular.svg'
+	},
+	{
 		name: "React JS",
 		icon: "/tech/reactjs.webp",
 	},
@@ -58,16 +62,16 @@ const technologies = [
 		icon: "/tech/nextjs.svg",
 	},
 	{
-		name: "Redux Toolkit",
-		icon: "/tech/redux.webp",
+		name: "Ruby On Rails",
+		icon: "/tech/ruby-on-rails.svg",
 	},
 	{
-		name: "Tailwind CSS",
-		icon: "/tech/tailwind.webp",
+		name: "PostgreSQL",
+		icon: "/tech/postgresql.svg",
 	},
 	{
-		name: "Three JS",
-		icon: "/tech/threejs.webp",
+		name: "SASS",
+		icon: "/tech/sass.svg",
 	},
 	{
 		name: "git",

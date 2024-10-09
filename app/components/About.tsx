@@ -60,8 +60,8 @@ const About = () => {
 				contract work, and freelancing, I have developed
 				a deep understanding of how libraries can be leveraged to create
 				dynamic and engaging user interfaces.<br/><br/>
-				My primary tech stack includes Typescript, JavaScript, Angular, React, Next.js, REST, HTML5, CSS3, SASS, 
-				Ruby on Rails, AWS services, Git, and PostgreSQL.
+				My primary tech stack includes Typescript, JavaScript, Angular, React, Next.js, Ruby on Rails, REST, HTML5, CSS3, SASS, 
+				Bootstrap, Tailwind, AWS services, Git, and PostgreSQL. I also specialize in Wordpress, Figma, Balsamiq and Adobe Photoshop, Illustator, and Indesign.
 				<br/><br/>
 				Driven by a passion for design thinking and problem-solving,
 				I am confident in my ability to create sleek
