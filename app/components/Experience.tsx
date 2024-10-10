@@ -11,6 +11,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 
 type ExperienceCardProps = {
@@ -21,7 +22,7 @@ type ExperienceCardProps = {
 const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
-		rootMargin: "-350px",
+		rootMargin: "-390px",
 	  });
 
 	return (
@@ -65,6 +66,16 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 						{point}
 					</li>
 				))}
+				{
+					experience.cta && <Link
+					href={experience.cta?.link}
+					target="_blank">
+						<button type="button" 
+						className="font-small text-center mt-3 px-3 py-2 bg-[#915EFF] hover:bg-purple-600 hover:-translate-y-0.5 rounded-md">
+							{experience.cta?.text}
+						</button>
+					</Link>
+				}
 			</ul>
 		</VerticalTimelineElement>
 	);

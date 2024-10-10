@@ -17,7 +17,7 @@ const Hero = () => {
 					</h1>
 					<p className="heroSubText">
 						A Software Engineer, Frontend Developer&nbsp;
-						<br className="sm:block hidden" />& UX/UI Designer
+						<br className="sm:block hidden" />& UI/UX Designer
 					</p>
 				</div>
 			</div>

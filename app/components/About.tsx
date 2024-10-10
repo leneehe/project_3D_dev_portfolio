@@ -58,10 +58,10 @@ const About = () => {
 				I bring a unique blend of skills as a graphic designer turned developer.
 				Through my extensive experiences in fast-paced startup environments,
 				contract work, and freelancing, I have developed
-				a deep understanding of how libraries can be leveraged to create
+				a deep understanding of how Javascript libraries can be leveraged to create
 				dynamic and engaging user interfaces.<br/><br/>
 				My primary tech stack includes Typescript, JavaScript, Angular, React, Next.js, Ruby on Rails, REST, HTML5, CSS3, SASS, 
-				Bootstrap, Tailwind, AWS services, Git, and PostgreSQL. I also specialize in Wordpress, Figma, Balsamiq and Adobe Photoshop, Illustator, and Indesign.
+				Bootstrap, Tailwind, AWS services, Git, and PostgreSQL. I also specialize in Wordpress, Figma, Balsamiq and Adobe Photoshop, Illustator, and InDesign.
 				<br/><br/>
 				Driven by a passion for design thinking and problem-solving,
 				I am confident in my ability to create sleek

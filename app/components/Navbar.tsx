@@ -43,16 +43,16 @@ const Navbar = () => {
 				>
 					<Link href="https://github.com/leneehe">
 						<Image
-							src="/logo.png"
-							width={80}
-							height={80}
+							src="/girl_laptop.png"
+							width={40}
+							height={40}
 							alt="logo"
 							priority
 							className="object-contain"
 						/>
 					</Link>
 					<p className="text-white text-[18px] font-bold cursor-pointer flex">
-						LENA &nbsp; <span className="sm:block hidden ">| Software Engineer</span>
+						LENA HE &nbsp; <span className="sm:block hidden ">| Software Engineer</span>
 					</p>
 				</div>
 

@@ -58,7 +58,7 @@ const Feedbacks = () => {
 				<motion.div variants={textVariant()}>
 					<h2 className="sectionHeadText">Social Profiles</h2>
 					<p className="sectionSubText">
-						Click on social media icons to check out..
+						Click on social media icons to connect with me..
 					</p>
 				</motion.div>
 			</div>
