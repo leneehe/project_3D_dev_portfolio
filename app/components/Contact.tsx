@@ -2,11 +2,13 @@
 import { slideIn } from "@/app/utils/motion";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { SectionWrapper } from "./HigherOrderComponents";
 import { EarthCanvas } from "./canvas";
 
 const Contact = () => {
+	useEffect(() => emailjs.init("uwuqkQlNQ1t_1-Hsq"), []);
+
 	const formRef = useRef<HTMLFormElement>(null);
 
 	const [form, setForm] = useState({
@@ -26,19 +28,22 @@ const Contact = () => {
 
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+		const serviceId = "service_qfady38";
+		const templateId = "template_670kdy3";
+
 		setLoading(true);
+
 		emailjs
 			.send(
-				"service_91ssn8g",
-				"template_jjegxdr",
+				serviceId,
+				templateId,
 				{
 					from_name: form.name,
 					to_name: "Lena He",
 					from_email: form.email,
 					to_email: "qy.lena@gmail.com",
 					message: form.message,
-				},
-				"VeFeVdEHL9F9_i6xp",
+				}
 			)
 			.then(() => {
 				setLoading(false);
