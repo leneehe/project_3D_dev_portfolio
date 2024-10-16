@@ -84,7 +84,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 const Experience = () => {
 
 	return (
-		<>
+		<div className="mt-12">
 			<motion.div variants={textVariant()}>
 				<p className="styles.sectionSubText text-center">
 					Work Experience
@@ -102,7 +102,7 @@ const Experience = () => {
 					))}
 				</VerticalTimeline>
 			</div>
-		</>
+		</div>
 	);
 };
 
