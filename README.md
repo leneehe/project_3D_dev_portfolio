@@ -83,7 +83,7 @@ The website should now be up and running on http://localhost:3000.
 
 [<img src="https://skillicons.dev/icons?i=github" />](https://github.com/leneehe)&nbsp;
 [<img src="https://skillicons.dev/icons?i=linkedin" />](https://www.linkedin.com/in/lenahe/)&nbsp;
-[<img src="https://skillicons.dev/icons?i=devto" />](https://github.com/leneehe)
+[<img src="https://skillicons.dev/icons?i=devto" />](https://www.lenahe.dev)
 <br>
 <br>
 <p align="center">

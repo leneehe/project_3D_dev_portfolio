@@ -3,10 +3,11 @@ import type { Variants } from "framer-motion";
 export const textVariant = (delay?: number) => {
 	return {
 		hidden: {
-			y: -50,
+			y: -100,
 			opacity: 0,
 		},
 		show: {
+			x:0,
 			y: 0,
 			opacity: 1,
 			transition: {
