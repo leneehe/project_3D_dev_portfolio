@@ -312,7 +312,7 @@ const projects = [
 		],
 		image: "/projectimg/dev_website.jpg",
 		source_code_link: "https://github.com/leneehe/project_3D_dev_portfolio",
-		site_link: "https://",
+		site_link: "https://lenahe-dev-portfolio.vercel.app",
 	},
 	{
 		name: "Baking with Mary",

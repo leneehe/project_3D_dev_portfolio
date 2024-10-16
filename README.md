@@ -14,7 +14,7 @@ Work done on it other than the tutorial:-
 - Enhanced Visibility and solved Responsive UI Problems.
 - Fixed react vertical timeline animation with Next.js
 
-This Project is hosted on Vercel : [3D Portfolio](https://project-3-d-portfolio-mu.vercel.app/)
+This Project is hosted on Vercel : [3D Portfolio](https://lenahe-dev-portfolio.vercel.app)
 
 ## 🏠 Built With:
 
