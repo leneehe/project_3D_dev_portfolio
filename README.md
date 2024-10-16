@@ -84,7 +84,8 @@ The website should now be up and running on http://localhost:3000.
 [<img src="https://skillicons.dev/icons?i=github" />](https://github.com/leneehe)&nbsp;
 [<img src="https://skillicons.dev/icons?i=linkedin" />](https://www.linkedin.com/in/lenahe/)&nbsp;
 [<img src="https://skillicons.dev/icons?i=devto" />](https://github.com/leneehe)
-
+<br>
+<br>
 <p align="center">
-  <img src="https://github.com/omunite215/Project_3DPortfolio/assets/78680563/2fcf609b-e802-4fec-8c82-8f55fd043437" alt="Om's Logo Image"/>
+  <img src="./public/logo-md.png" alt="Lena He Dev"/>
 </p>
