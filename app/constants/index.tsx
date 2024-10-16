@@ -194,89 +194,95 @@ const testimonials = [
 
 const projects = [
 	{
-		name: "Random Quote Generator",
+		name: "My Care Compass",
 		description:
-			"A Fully Responsive Random Quote generating website project given by Free Code Camp while completing Front-End Libraries Certifications built using React.JS , Bootstrap CSS and HTML.",
+			"A Fully Responsive patient care planning platform given by the Ward of the 21st Century research team at University of Calgary. Features includes symptoms-data tracking and insights, goal setting, calendar, reminder tools and generate report for care providers. Built using Ruby on Rails, Bootstrap, and PostgreSQL.",
 		tags: [
 			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "bootstrap",
+				name: "rubyonrails",
 				color: "pink-text-gradient",
 			},
 			{
-				name: "quoteapi",
+				name: "bootstrap",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "chartist.js",
 				color: "orange-text-gradient",
 			},
+			{
+				name: "smartwizard",
+				color: "green-text-gradient",
+			},
+			{
+				name: "postgresql",
+				color: "blue-text-gradient"
+			}
 		],
-		image: "/projectimg/quote.webp",
+		image: "/projectimg/mcc.jpg",
 		source_code_link:
-			"https://github.com/omunite215/FCC-Random-Quote-Generator",
-		netlify_link: "https://randomquotegeneratorbyom.netlify.app/",
+			"https://github.com/leneehe/W21C-prototype#my-care-compass"
 	},
 	{
-		name: "Admin Dashboard UI",
+		name: "Inventory System Dashboard UI",
 		description:
-			"React Admin Dashboard is a stunning web application that has a beautiful User Interface and has been built using advanced JavaScript concepts, React, and Tailwind CSS which has different graphs, stats and themes.",
+			"React Inventory System Dashboard is a business user login web application, part of opencannabiz.com, which allows business account creation, manage stores, products and services for listing a business on the platform. UI built with React, formik and Material Kit Pro which has account management, product listings, advanced uploaders and forms, and different themes.",
 		tags: [
 			{
 				name: "react",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "Syncfusion UI",
+				name: "Material UI",
 				color: "orange-text-gradient",
 			},
 			{
-				name: "tailwind",
+				name: "formik",
 				color: "green-text-gradient",
 			},
+			{
+				name: "figma",
+				color: "pink-text-gradient",
+			},
 		],
-		image: "/projectimg/dashboard.webp",
-		source_code_link: "https://github.com/omunite215/React-Admin-DashBoard",
-		netlify_link: "https://reactadmindashboardbyom.netlify.app/",
+		image: "/projectimg/inventory_system_ui.jpg",
+		prototype_link: "https://www.figma.com/proto/gnKAzGapVXjFd1UhLZmSYx/Inventory-System-Admin-template?page-id=3959%3A13243&node-id=5174-24154&node-type=canvas&viewport=1170%2C458%2C0.13&t=l4bDwO9IfaAuqeNW-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5174%3A24154",
+		site_link: "https://admin.opencannabiz.com/",
 	},
 	{
-		name: "HooBank",
+		name: "OpenCannabiz",
 		description:
-			"A responsive Bank HomePage showcasing different features such as various payment gateways integration, easy money transfer, advanced security, etc. It has a beautiful interface made using Tailwind CSS and React",
+			"A cannabis e-commerce and review website showcasing different businesses, products, resources for the global Chinese community. It has a beautiful interface made using Material UI, Tailwind CSS, React, Next.js and GraphQL. UX/UI prototype deisgned with Balsamiq and Figma",
 		tags: [
 			{
 				name: "react",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "tailwind",
-				color: "green-text-gradient",
-			},
-		],
-		image: "/projectimg/hoobank.webp",
-		source_code_link: "https://github.com/omunite215/hoobank",
-		netlify_link: "https://hoobankbyom.netlify.app/",
-	},
-	{
-		name: "Provid A Youtube Clone",
-		description:
-			"Provid is a YouTube clone project built with React, Material UI, and Tailwind CSS. The platform has been designed with a stunning dark mode that enhances the viewing experience. The user interface is intuitive and easy to navigate, ensuring that users can easily find the content they're looking for.",
-		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "materialui",
+				name: "next.js",
 				color: "orange-text-gradient",
 			},
 			{
-				name: "rapidapi",
+				name: "graphql",
+				color: "green-text-gradient",
+			},
+			{
+				name: "Material UI",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "tailwind",
 				color: "blue-text-gradient",
 			},
+			{
+				name: "figma",
+				color: "pink-text-gradient",
+			},
 		],
-		image: "/projectimg/provid.webp",
-		source_code_link: "https://github.com/omunite215/Provid-A-YouTube-Clone",
-		netlify_link: "https://providbyom.netlify.app/",
+		image: "/projectimg/opencannabiz.jpg",
+		prototype_link: "https://www.figma.com/proto/VspdPWlTEABWflaXNfHV9Q/Damawish-mockup?page-id=0%3A1&node-id=84-1&node-type=frame&viewport=2331%2C339%2C0.24&t=T3Nswmr2kJpZi2M3-1&scaling=scale-down&content-scaling=fixed",
+		source_code_link: "https://github.com/damawishtech/damawish-website-ui",
+		site_link: "https://opencannabiz.com/",
 	},
 	{
 		name: "A 3D Developer Portfolio",
@@ -286,6 +292,10 @@ const projects = [
 			{
 				name: "react",
 				color: "blue-text-gradient",
+			},
+			{
+				name: "next.js",
+				color: "orange-text-gradient",
 			},
 			{
 				name: "tailwind",
@@ -300,10 +310,59 @@ const projects = [
 				color: "pink-text-gradient",
 			},
 		],
-		image: "/projectimg/portfoliosample.webp",
-		source_code_link: "https://github.com/omunite215/portfolio",
-		netlify_link: "https://portfoliobyompatel.netlify.app/",
+		image: "/projectimg/dev_website.jpg",
+		source_code_link: "https://github.com/leneehe/project_3D_dev_portfolio",
+		site_link: "https://",
 	},
+	{
+		name: "Baking with Mary",
+		description:
+			"A community-driven recipe sharing web application featuring Cannabis-infused foods. The platform has been designed with responsive views that enhances the viewing experience. The user interface is intuitive and easy to navigate, ensuring that users can easily find the content they're looking for. Most features come from the multiple search filters, user receipe inputs, coupled by google maps integration to find nearby dispensaries.",
+		tags: [
+			{
+				name: "rubyonrails",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "bootstrap",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "postgresql",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "jquery",
+				color: "green-text-gradient",
+			},
+			{
+				name: "sass",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "agile",
+				color: "green-text-gradient",
+			},
+		],
+		image: "/projectimg/bakingwithmary2.jpg",
+		source_code_link: "https://github.com/leneehe/mary_development",
+	},
+	{
+		name: "Calmwaters Fly Fishing",
+		description: "A responsive website for a local fly fishing guide company located in Ontario, Canada. The website is redesigned by me to work with its brand identiy and built with wordpress.",
+		tags: [
+			{
+				name: "wordpress",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "photoshop",
+				color: "green-text-gradient",
+			},
+		],
+		image: "/projectimg/calmwaters.jpg",
+		site_link: "https://calmwatersflyfishing.ca/"
+	}
 ];
 
 export { services, technologies, experiences, testimonials, projects };

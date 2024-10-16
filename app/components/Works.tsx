@@ -17,8 +17,9 @@ type ProjectCardProps = {
 		color: string;
 	}[];
 	image: string;
-	source_code_link: string;
-	netlify_link: string;
+	source_code_link?: string;
+	site_link?: string;
+	prototype_link?: string;
 };
 
 const ProjectCard = ({
@@ -28,7 +29,8 @@ const ProjectCard = ({
 	tags,
 	image,
 	source_code_link,
-	netlify_link,
+	site_link,
+	prototype_link,
 }: ProjectCardProps) => {
 	return (
 		<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -50,7 +52,7 @@ const ProjectCard = ({
 					/>
 
 					<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-						<Link
+						{source_code_link && <Link
 							href={source_code_link}
 							target="_blank"
 							className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -62,9 +64,22 @@ const ProjectCard = ({
 								alt="source-code"
 								className="object-contain"
 							/>
-						</Link>
-						<Link
-							href={netlify_link}
+						</Link>}
+						{prototype_link && <Link
+							href={prototype_link}
+							target="_blank"
+							className="black-gradient w-10 h-10 ml-2 rounded-full flex justify-center items-center cursor-pointer"
+						>
+							<Image
+								src="/tech/figma.webp"
+								width={24}
+								height={24}
+								alt="source code"
+								className="object-contain"
+							/>
+						</Link>}
+						{site_link && <Link
+							href={site_link}
 							target="_blank"
 							className="black-gradient w-10 h-10 ml-2 rounded-full flex justify-center items-center cursor-pointer"
 						>
@@ -75,7 +90,7 @@ const ProjectCard = ({
 								alt="source code"
 								className="object-contain"
 							/>
-						</Link>
+						</Link>}
 					</div>
 				</div>
 

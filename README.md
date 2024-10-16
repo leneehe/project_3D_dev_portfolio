@@ -1,7 +1,7 @@
 # Project 3D - Portfolio
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/78680563/227708528-0e803ddf-506e-4d8b-98bc-dd7bf0f1b518.png" alt="Om's Logo Image"/>
+  <img src="./public/projectimg/dev_website.jpg" alt="Lena's Dev portfolios"/>
 </p>
 
 This is my first portfolio project using Next.js and Three.js. Originally from [Om's 3D Portfolio](https://github.com/omunite215/Project_3DPortfolio), initially made using tutorial of [JavaScipt Mastery](https://youtu.be/0fYi8SGA20k?feature=shared).
@@ -12,6 +12,7 @@ Work done on it other than the tutorial:-
 - Made UI Faster.
 - Added a Resume Button.
 - Enhanced Visibility and solved Responsive UI Problems.
+- Fixed react vertical timeline animation with Next.js
 
 This Project is hosted on Vercel : [3D Portfolio](https://project-3-d-portfolio-mu.vercel.app/)
 
@@ -78,7 +79,7 @@ The website should now be up and running on http://localhost:3000.
   </a>
 </p>
 
-## 🙋‍♂️ Connect With Me
+## 🙋🏻‍♀️ Connect With Me
 
 [<img src="https://skillicons.dev/icons?i=github" />](https://github.com/leneehe)&nbsp;
 [<img src="https://skillicons.dev/icons?i=linkedin" />](https://www.linkedin.com/in/lenahe/)&nbsp;
