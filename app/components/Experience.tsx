@@ -5,7 +5,7 @@ import { textVariant, zoomIn } from "@/app/utils/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import { useState, useEffect } from "react";
+import useMobile from "./hooks/useIsMobile";
 import {
 	VerticalTimeline,
 	VerticalTimelineElement,
@@ -13,6 +13,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
+
 
 
 type ExperienceCardProps = {
@@ -83,38 +84,28 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 };
 
 const Experience = () => {
-	const [isMobile, setIsMobile] = useState(false);
+	const {isMobile} = useMobile();
 
-	useEffect(() => {
-		const mediaQuery = window.matchMedia("(max-width: 500px)");
-		setIsMobile(mediaQuery.matches);
-		const handleMediaQueryChange = (event: MediaQueryListEvent) => {
-			setIsMobile(event.matches);
-		};
-		mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-		return () => {
-			mediaQuery.removeEventListener("change", handleMediaQueryChange);
-		};
-	}, []);
+	const headerElements = (
+		<>
+			<p className="styles.sectionSubText text-center">
+				Work Experience
+			</p>
+			<h2 className="sectionHeadText text-center">My Journey.</h2>
+		</>
+	)
 
 	return (
 		<div className="mt-12">
 			{ !isMobile && <motion.div variants={textVariant()}>
-				<p className="styles.sectionSubText text-center">
-					Work Experience
-				</p>
-				<h2 className="sectionHeadText text-center">My Journey.</h2>
+				{ headerElements }
 				</motion.div>
 			}
 
 			{
 				isMobile &&
 				<div>
-				<p className="styles.sectionSubText text-center">
-					Work Experience
-				</p>
-				<h2 className="sectionHeadText text-center">My Journey.</h2>
+					{ headerElements }
 				</div>
 			}
 

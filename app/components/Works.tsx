@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { useState, useEffect } from "react";
+import useMobile from "./hooks/useIsMobile";
 import { Tilt } from "react-tilt";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -21,6 +21,7 @@ type ProjectCardProps = {
 	source_code_link?: string;
 	site_link?: string;
 	prototype_link?: string;
+	isMobile: boolean;
 };
 
 const ProjectCard = ({
@@ -32,10 +33,10 @@ const ProjectCard = ({
 	source_code_link,
 	site_link,
 	prototype_link,
+	isMobile
 }: ProjectCardProps) => {
-	return (
-		<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-			<Tilt
+	const component = (
+		<Tilt
 				options={{
 					max: 45,
 					scale: 1,
@@ -111,59 +112,65 @@ const ProjectCard = ({
 					))}
 				</div>
 			</Tilt>
-		</motion.div>
-	);
+	)
+	if (isMobile) {return component}
+	else {
+		return (
+			<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+				{component}
+			</motion.div>
+		);
+	}
 };
 
 const Works = () => {
-	const [isMobile, setIsMobile] = useState(false);
+	const {isMobile} = useMobile();
 
-	useEffect(() => {
-		const mediaQuery = window.matchMedia("(max-width: 500px)");
-		setIsMobile(mediaQuery.matches);
-		const handleMediaQueryChange = (event: MediaQueryListEvent) => {
-			setIsMobile(event.matches);
-		};
-		mediaQuery.addEventListener("change", handleMediaQueryChange);
+	const description = `Following projects showcases my skills and experience through
+					real-world examples of my work. Each project is briefly described with
+					links to code repositories and live demos in it. It reflects my
+					ability to solve complex problems, work with different technologies,
+					and manage projects effectively.`;
 
-		return () => {
-			mediaQuery.removeEventListener("change", handleMediaQueryChange);
-		};
-	}, []);
+	const headerElements = (
+		<>
+			<p className="sectionSubText">My work</p>
+			<h2 className="sectionHeadText">Projects.</h2>
+		</>
+	)
 
 	return (
 		<div className="mt-12">
 			{ !isMobile &&
 				<motion.div variants={textVariant()}>
-					<p className="sectionSubText">My work</p>
-					<h2 className="sectionHeadText">Projects.</h2>
+					{ headerElements }
 				</motion.div>
 			}
 
 			{
-				isMobile &&
-				<div>
-					<p className="sectionSubText">My work</p>
-					<h2 className="sectionHeadText">Projects.</h2>
-				</div>
+				isMobile && <div> { headerElements } </div>
 			}
 
 			<div className="w-full flex">
+			{ !isMobile &&
 				<motion.p
 					variants={fadeIn("", "", 0.1, 1)}
 					className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
 				>
-					Following projects showcases my skills and experience through
-					real-world examples of my work. Each project is briefly described with
-					links to code repositories and live demos in it. It reflects my
-					ability to solve complex problems, work with different technologies,
-					and manage projects effectively.
+					{ description }
 				</motion.p>
+			}
+			{
+				isMobile &&
+				<p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+					{ description }
+				</p>
+			}
 			</div>
 
 			<div className="mt-20 flex flex-wrap gap-7">
 				{projects.map((project, index) => (
-					<ProjectCard key={`project-${index}`} index={index} {...project} />
+					<ProjectCard key={`project-${index}`} index={index} {...project} isMobile={isMobile} />
 				))}
 			</div>
 		</div>
