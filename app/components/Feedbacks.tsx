@@ -58,7 +58,7 @@ const Feedbacks = () => {
 				<motion.div variants={textVariant()}>
 					<h2 className="sectionHeadText">Social Profiles</h2>
 					<p>
-						I'm not super on the socials, but I do have a LinkedIn, Github, and X. Click on the social media icons to connect with me.
+						I&apos;m not super on the socials, but I do have a LinkedIn, Github, and X. Click on the social media icons to connect with me.
 					</p>
 				</motion.div>
 			</div>
