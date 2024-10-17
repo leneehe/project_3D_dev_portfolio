@@ -7,12 +7,14 @@
 This is my first portfolio project using Next.js and Three.js. Originally from [Om's 3D Portfolio](https://github.com/omunite215/Project_3DPortfolio), initially made using tutorial of [JavaScipt Mastery](https://youtu.be/0fYi8SGA20k?feature=shared).
 
 Work done on it other than the tutorial:-
+- Replaced 3D hero canvas.
+- Fixed react vertical timeline animation bug
+- Created a custom hook for responsive view.
 - Removed unused CSS.
 - Removed Extra Animations.
 - Made UI Faster.
 - Added a Resume Button.
 - Enhanced Visibility and solved Responsive UI Problems.
-- Fixed react vertical timeline animation with Next.js
 
 This Project is hosted on Vercel : [3D Portfolio](https://lenahe-dev-portfolio.vercel.app)
 

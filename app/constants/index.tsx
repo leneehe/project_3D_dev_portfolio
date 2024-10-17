@@ -108,7 +108,7 @@ const experiences = [
 		date: "Oct 2017 - Jan 2018",
 		points: [
 			"I completed a 12-week full-time web development immersive program with over 468+ hours of coding, specializing in HTML/CSS, Javascript/JQuery, AJAX, Ruby on Rails, PostgreSQL, and Github.",
-			`I built several projects, including the launch of full-stack collaborative web app project "Baking with Mary" - a cannabis-infused receipe review platform.`
+			`I built several projects, including the launch of full-stack collaborative web app project "Baking with Mary" - a community-driven cannabis-infused receipe & review platform.`
 		],
 	},
 	{
@@ -118,7 +118,7 @@ const experiences = [
 		iconBg: "#FFF",
 		date: "Feb 2018 - Nov 2019",
 		points: [
-			"I worked contract and freelance on multiple web app projects, including EdTech, Ecommerce-tech, and patient-care platforms.",
+			"While looking for fulltime work, I worked contract and freelance on multiple web app projects, including EdTech, E-commerce tech, and patient-care platforms.",
 			"I developed and deployed progressive web apps, including scope and design contribution, utilized MVC-style frameworks like Ruby on Rails for the back-end.",
 			"I also developed and maintained Wordpress sites with marketing contents to support SEO and responsive views."
 		],
@@ -130,9 +130,9 @@ const experiences = [
 		iconBg: "#FAD305",
 		date: "May 2018 - Oct 2021",
 		points: [
-			"I led the frontend development for the startup's IoT cloud platform consisting of new and legacy web applications, integration UI, and automated reporting services.",
-			"I collaborated closely with the product manager and the cross-functional team in the early stages of concept development and brainstorming to implement new features, test, and fix bugs to ensure business and user outcomes, resulting in shortened work orders and increased IOT product delivery capacity.",
-			"Enhanced user experience by transforming design from wireframes to UI iterations, and analyzing web analytics data & funnel tool to adapt to UI changes",
+			`At iSmart, I worked as both frontend developer and designer for the startup's IoT cloud platform consisting of new and legacy web applications, integration UI, and automated reporting services.`,
+			"I collaborated closely with the product manager and the cross-functional team in the early stages of concept development and brainstorming to implement new features, test, and fix bugs, which ensured the business and user outcomes resulting in shortened work orders and increased IOT product delivery capacity.",
+			"Enhanced user experience by transforming design from wireframes to UI iterations, and analyzing web analytics data & funnel tool to adapt to UI changes.",
 		],
 	},
 	{
@@ -298,11 +298,11 @@ const projects = [
 				color: "green-text-gradient",
 			},
 			{
-				name: "threejs",
+				name: "three.js",
 				color: "orange-text-gradient",
 			},
 			{
-				name: "emailjs",
+				name: "email.js",
 				color: "pink-text-gradient",
 			},
 		],
@@ -335,21 +335,25 @@ const projects = [
 				name: "sass",
 				color: "blue-text-gradient",
 			},
-			{
-				name: "agile",
-				color: "green-text-gradient",
-			},
 		],
 		image: "/projectimg/bakingwithmary2.jpg",
 		source_code_link: "https://github.com/leneehe/mary_development",
 	},
 	{
 		name: "Calmwaters Fly Fishing",
-		description: "A responsive website for a local fly fishing guide company located in Ontario, Canada. The website is redesigned by me to work with its brand identiy and built with wordpress.",
+		description: "A responsive website for a local fly fishing guide company located in Ontario, Canada. The website is redesigned by me to work with its brand identity and built with wordpress.",
 		tags: [
 			{
 				name: "wordpress",
 				color: "blue-text-gradient",
+			},
+			{
+				name: "html",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "css",
+				color: "orange-text-gradient",
 			},
 			{
 				name: "photoshop",
@@ -358,6 +362,30 @@ const projects = [
 		],
 		image: "/projectimg/calmwaters.jpg",
 		site_link: "https://calmwatersflyfishing.ca/"
+	},
+	{
+		name: "Performance Chiro",
+		description: "A website I designed and built for a chiropractic/physiotherapy company in Edmonton, AB. It's a static site that provides information about the company and the services they offer. The site is built with wordpress.",
+		tags: [
+			{
+				name: "wordpress",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "html",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "css",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "photoshop",
+				color: "green-text-gradient",
+			},
+		],
+		image: "/projectimg/performance_chiro.jpg",
+		site_link: "https://performancechiro.ca/"
 	}
 ];
 
