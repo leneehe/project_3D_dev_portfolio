@@ -108,7 +108,7 @@ const experiences = [
 		date: "Oct 2017 - Jan 2018",
 		points: [
 			"I completed a 12-week full-time web development immersive program with over 468+ hours of coding, specializing in HTML/CSS, Javascript/JQuery, AJAX, Ruby on Rails, PostgreSQL, and Github.",
-			`I built several projects, including the launch of full-stack collaborative web app project "Baking with Mary" - a community-driven cannabis-infused receipe & review platform.`
+			`I built several projects, including the launch of full-stack collaborative web app project "Baking with Mary" - a community-driven receipe and review platform.`
 		],
 	},
 	{
@@ -165,7 +165,7 @@ const testimonials = [
 	{
 		id: 1,
 		testimonial:
-			"Connect with me on LinkedIn! Let’s share insights, grow our networks, and explore opportunities to collaborate. Looking forward to connecting with you!",
+			"Connect with me on LinkedIn. Let’s share insights, grow our networks, and explore opportunities to collaborate. Looking forward to connecting with you!",
 		name: "Lena He",
 		image: "/socialmedia/linkedin.svg",
 		link: "https://www.linkedin.com/in/lenahe",
