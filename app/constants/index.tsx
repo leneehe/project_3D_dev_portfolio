@@ -74,10 +74,6 @@ const technologies = [
 		icon: "/tech/sass.webp",
 	},
 	{
-		name: "git",
-		icon: "/tech/git.webp",
-	},
-	{
 		name: "figma",
 		icon: "/tech/figma.webp",
 	},

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useState, useEffect } from "react";
 import { Tilt } from "react-tilt";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -115,12 +116,37 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const mediaQuery = window.matchMedia("(max-width: 500px)");
+		setIsMobile(mediaQuery.matches);
+		const handleMediaQueryChange = (event: MediaQueryListEvent) => {
+			setIsMobile(event.matches);
+		};
+		mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+		return () => {
+			mediaQuery.removeEventListener("change", handleMediaQueryChange);
+		};
+	}, []);
+
 	return (
 		<div className="mt-12">
-			<motion.div variants={textVariant()}>
-				<p className="sectionSubText">My work</p>
-				<h2 className="sectionHeadText">Projects.</h2>
-			</motion.div>
+			{ !isMobile &&
+				<motion.div variants={textVariant()}>
+					<p className="sectionSubText">My work</p>
+					<h2 className="sectionHeadText">Projects.</h2>
+				</motion.div>
+			}
+
+			{
+				isMobile &&
+				<div>
+					<p className="sectionSubText">My work</p>
+					<h2 className="sectionHeadText">Projects.</h2>
+				</div>
+			}
 
 			<div className="w-full flex">
 				<motion.p

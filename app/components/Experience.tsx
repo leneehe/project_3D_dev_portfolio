@@ -1,10 +1,11 @@
 "use client";
 import { SectionWrapper } from "@/app/components/HigherOrderComponents";
 import { experiences } from "@/app/constants";
-import { textVariant } from "@/app/utils/motion";
+import { textVariant, zoomIn } from "@/app/utils/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import { useState, useEffect } from "react";
 import {
 	VerticalTimeline,
 	VerticalTimelineElement,
@@ -82,15 +83,41 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 };
 
 const Experience = () => {
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const mediaQuery = window.matchMedia("(max-width: 500px)");
+		setIsMobile(mediaQuery.matches);
+		const handleMediaQueryChange = (event: MediaQueryListEvent) => {
+			setIsMobile(event.matches);
+		};
+		mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+		return () => {
+			mediaQuery.removeEventListener("change", handleMediaQueryChange);
+		};
+	}, []);
 
 	return (
 		<div className="mt-12">
-			<motion.div variants={textVariant()}>
+			{ !isMobile && <motion.div variants={textVariant()}>
 				<p className="styles.sectionSubText text-center">
 					Work Experience
 				</p>
 				<h2 className="sectionHeadText text-center">My Journey.</h2>
-			</motion.div>
+				</motion.div>
+			}
+
+			{
+				isMobile &&
+				<div>
+				<p className="styles.sectionSubText text-center">
+					Work Experience
+				</p>
+				<h2 className="sectionHeadText text-center">My Journey.</h2>
+				</div>
+			}
+
 
 			<div className="mt-20 flex flex-col">
 				<VerticalTimeline layout="2-columns">
